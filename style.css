@@ -51,6 +51,14 @@ a {
   color: white;
 }
 
+@media (max-width: 600px) {
+  .superinfo {
+    justify-content: flex-start;
+    gap: 10px 30px;
+    font-size: 0.875rem;
+  }
+}
+
 .menu-bg {
   background: #2c70ff;
 }
@@ -89,6 +97,18 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .menu ul a {
+    font-size: 1.125rem;
+  }
+  .menu {
+    padding-left: 0;
+  }
+  .menu-logo {
+    padding-left: 10px;
+  }
 }
 
 .introducao {
@@ -260,6 +280,27 @@ a {
     order: -1;
   }
 }
+@media (max-width: 400px) {
+  .introducao {
+    padding: 40px 10px;
+  }
+  .sobre {
+    padding: 40px 10px;
+  }
+  .produtos {
+    padding: 40px 10px;
+  }
+  .produtos h1 {
+    margin-bottom: 40px;
+  }
+  .produtos-container {
+    flex-direction: column;
+  }
+  .preco {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
 
 .qualidade {
   max-width: 960px;
@@ -304,6 +345,13 @@ a {
   font-size: 1.25rem;
   line-height: 1.4;
   color: #7c7c7c;
+}
+
+@media (max-width: 400px) {
+  .qualidade {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .newsletter {
@@ -372,6 +420,12 @@ a {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 400px) {
+  .newsletter {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
 
 .footer {
   display: flex;
@@ -385,4 +439,13 @@ a {
   color: #122ab2;
   text-align: center;
   flex: 1;
+}
+
+@media (max-width: 400px) {
+  .footer p {
+    font-size: 1.125rem;
+  }
+  .footer {
+    height: 100px;
+  }
 }
